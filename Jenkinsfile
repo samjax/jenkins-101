@@ -12,7 +12,8 @@ pipeline {
             steps {
                 echo "Testing new build.."
                 sh '''
-                echo "new change alert"
+                cd myapp
+                pip install -r requirements.txt
                 '''
             }
         }
