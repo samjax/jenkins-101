@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Building using my first pipeline.."
+                echo "Testing new build.."
                 sh '''
                 echo "new change alert"
                 '''
