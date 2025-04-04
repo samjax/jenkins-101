@@ -20,7 +20,9 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                echo "new change alert"
+                cd myapp
+                python3 hello.py
+                python3 hello.py --name=sampath
                 '''
             }
         }
