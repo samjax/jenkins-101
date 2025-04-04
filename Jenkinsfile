@@ -10,10 +10,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Building danda nakka.."
+                echo "Building using my first pipeline.."
                 sh '''
-                cd myapp
-                pip install -r requirements.txt
+                echo "new change alert"
                 '''
             }
         }
@@ -21,9 +20,7 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                cd myapp
-                python3 hello.py
-                python3 hello.py --name=sampath
+                echo "new change alert"
                 '''
             }
         }
